@@ -9,5 +9,5 @@ alarme_ativar()
 * `param 1:`</i>  "Left" ou "Right";
 * `param 2:`</i>  SO, S<b style="font-size: 12px"> \/, SE, O<span style="font-size: 12px"> <</span>, C(`char`), L<span style="font-size: 12px"> ></span>, NO, N<b style="font-size: 12px"> /\, NE;
 * `param 3:`</i> número;
-* `(opc) param 4:` número; sup><sub> intervalo em milisegundos após clicar, o padrão é 1000ms </sub></sup>
+* `(opc) param 4:` número; <sup><sub> intervalo em milisegundos após clicar, o padrão é 1000ms </sub></sup>
 * `(opc) param 5:` número
