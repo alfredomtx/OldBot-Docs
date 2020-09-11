@@ -5,11 +5,9 @@ Realiza a mesma ação de quando o botão de Ativar Alarme é pressionado(após 
 alarme_ativar()
 ```
 
-### clicar_sqm()
-Clicar em um dos SQMs em volta do char.
-```ahk
-clicar_sqm(Right, S, 1)
-```
->Clicar com o botão esquer 1 vez no SQM ao Sul do char.
-
-* `(opc) param 4:` número; This is some <sup><sub> teste !! superscript</sub></sup> text.
+### clicar_sqm(`clique, direção, vezes, delay_cliques`)
+* `param 1:`</i>  "Left" ou "Right";
+* `param 2:`</i>  SO, S<b style="font-size: 12px"> \/, SE, O<span style="font-size: 12px"> <</span>, C(`char`), L<span style="font-size: 12px"> ></span>, NO, N<b style="font-size: 12px"> /\, NE;
+* `param 3:`</i> número;
+* `(opc) param 4:` número; sup><sub> intervalo em milisegundos após clicar, o padrão é 1000ms </sub></sup>
+* `(opc) param 5:` número
