@@ -12,4 +12,4 @@ clicar_sqm(Right, S, 1)
 ```
 >Clicar com o botão esquer 1 vez no SQM ao Sul do char.
 
-* `(opc) param 4:` número; <span style="color: gray">intervalo em milisegundos após clicar, o padrão é 1000ms</span>;
+* `(opc) param 4:` número; <span style="color:blue">intervalo em milisegundos após clicar, o padrão é 1000ms</span>;
