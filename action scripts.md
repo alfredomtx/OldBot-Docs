@@ -1,2 +1,7 @@
-# OldBot-Docs
-Documentações do OldBot
+
+# Action Scripts:
+=============
+
+
+##### ativar_alarme()  
+>teste
