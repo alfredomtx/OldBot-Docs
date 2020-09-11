@@ -7,7 +7,7 @@ alarme_ativar()
 
 ### clicar_sqm()
 Clicar em um dos SQMs em volta do char.
-```c
+```js
 clicar_sqm(Right, S, 1)
 ```
 >Clicar com o botão esquer 1 vez no SQM ao Sul do char.
