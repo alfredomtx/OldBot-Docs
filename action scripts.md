@@ -95,7 +95,7 @@ enviar_mensagem(hi)
 * `param 1:` texto
 * <sub><sup>(opc)</sup></sub> `param 2:` 0 ou 1
 	* `default:` 0
-	* Se = 1, irá aguardar o processo do AHK Script ser fechado para seguir para a próxima ação.
+	* se = 1, irá aguardar o processo do AHK Script ser fechado para seguir para a próxima ação.
 ```
 executar_ahk_script(`start ring refill v1.1`)
 ```
@@ -105,7 +105,7 @@ executar_ahk_script(`start ring refill v1.1`)
 ### exitar_jogo(`tirar_screenshot`)
 * <sub><sup>(opc)</sup></sub> `param 1:` 0 ou 1
 	* `default:` 1
-	* Se = 1 irá tirar uma screenshot da tela antes de exitar o jogo.
+	* se = 1 irá tirar uma screenshot da tela antes de exitar o jogo.
 
 
 ### esperar(`milisegundos`)
