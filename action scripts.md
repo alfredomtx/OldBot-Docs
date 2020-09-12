@@ -43,7 +43,8 @@ Realiza a mesma ação da Special Action `Habilitar check disconnected nas waypo
 * `param 1:` "Left" ou "Right"
 * `param 2:` SO, S `\/`, SE, O `<`, C`(char)`, L `>`, NO, N `/\`, NE
 * `param 3:` número
-* <sub><sup>(opc)</sup></sub> `param 4:` número <sub><sup> intervalo em milisegundos após clicar, o padrão é **1000ms** </sup></sub>
+* <sub><sup>(opc)</sup></sub> `param 4:` número <sub><sup> intervalo em milisegundos após clicar </sup></sub>
+	* `default:` 1000ms
 * <sub><sup>(opc)</sup></sub> `param 5:` número
 ```
 clicar_SQM(Right, S, 1) 
@@ -55,7 +56,8 @@ clicar_SQM(Right, S, 1)
 * `param 1:` "Left" ou "Right"
 * `param 2:` número
 * `param 3:` diretório da imagem <sub><sup>  que deve estar **dentro da pasta** do script atual </sup></sub>
-* <sub><sup>(opc)</sup></sub> `param 4:` número <sub><sup> intervalo em milisegundos após clicar, o padrão é **1000ms** </sup></sub>
+* <sub><sup>(opc)</sup></sub> `param 4:` número <sub><sup> intervalo em milisegundos após clicar </sup></sub>
+	* `default:` 1000ms
 * <sub><sup>(opc)</sup></sub> `param 5:` número <sub><sup> nível de tolerância, de 30 a 80, ao buscar pela imagem. Quanto menor mais preciso é a busca, o padrão é **45** </sup></sub>
 
 ``` 
@@ -72,7 +74,8 @@ clicar_na_imagem(Right, 3, 1000, imagens_script\meuitem.png)
 * `param 1:` "Left" ou "Right"
 * `param 2:` coordenada X da tela
 * `param 3:` coordenada Y da tela
-* `param 4:` número <sub><sup> intervalo em milisegundos após clicar, o padrão é **1000ms** </sup></sub>
+* `param 4:` número <sub><sup> intervalo em milisegundos após clicar </sup></sub>
+	* `default:` 1000ms
 ```
 clicar_posicao_tela(Right, 1250, 350, 5) 
 ```
@@ -91,7 +94,7 @@ enviar_mensagem(hi)
 ### executar_ahk_script(`nome script, aguardar_execução`)
 * `param 1:` texto
 * <sub><sup>(opc)</sup></sub> `param 2:` 0 ou 1
-	* `padrão:` 0
+	* `default:` 0
 	* Se o valor for 1, irá aguardar o processo do AHK Script ser fechado para seguir para a próxima ação.
 ```
 executar_ahk_script(`start ring refill v1.1`)
@@ -101,7 +104,7 @@ executar_ahk_script(`start ring refill v1.1`)
 
 ### exitar_jogo(`tirar_screenshot`)
 * <sub><sup>(opc)</sup></sub> `param 1:` 0 ou 1
-	* `padrão:` 1
+	* `default:` 1
 	* Se 1, irá tirar uma screenshot da tela antes de exitar o jogo.
 
 
