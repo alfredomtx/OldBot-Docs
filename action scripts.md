@@ -12,52 +12,31 @@ Inclusive algumas Action Scripts possuem ações/opções disponiveis para uso q
 
 # Action Scripts
 ### alarme_ativar()
-```
-alarme_ativar()
-```
-> realiza a mesma ação de quando o botão de Ativar Alarme é pressionado(`após ter clicado no botão para Parar o alarme`).
+Realiza a mesma ação de quando o botão de Ativar Alarme é pressionado(`após ter clicado no botão para Parar o alarme`).
     
 
 ### alarme_parar()
-```
-alarme_parar()
-```
-> realiza a mesma ação de quando o botão de Parar Alarme é pressionado na tela do Painel do Cavebot.
+Realiza a mesma ação de quando o botão de Parar Alarme é pressionado na tela do Painel do Cavebot.
     
 
 ### ativar_server_log()
-```
-ativar_server_log()
-```
-> procura pela aba do chat do Server Log e clica para ativá-lonecessário para a função de lootear somente com loot valioso/pular loot vazio que precisa do Server Log visível.
+Procura pela aba do chat do Server Log e clica para ativá-lonecessário para a função de lootear somente com loot valioso/pular loot vazio que precisa do Server Log visível.
     
 
 ### atualizar_posicao_char()
-```
-atualizar_posicao_char()
-```
-> realiza a função de detectar a posição central do char na tela e atualiza os valores, função compatível com <b>Tibia 11 e 12 somente.
+Realiza a função de detectar a posição central do char na tela e atualiza os valores, função compatível com **Tibia 11 e 12** somente.
     
 
 ### checar_lixos_dropar()
-```
-checar_lixos_dropar()
-```
-> realiza a mesma ação da Special Action "Checar lixos para dropar".
+Realiza a mesma ação da Special Action "Checar lixos para dropar".
     
 
 ### check_disconnected_desabilitar()
-```
-check_disconnected_desabilitar()
-```
-> realiza a mesma ação da Special Action "Desabilitar check disconnected nas waypoints".
+Realiza a mesma ação da Special Action "Desabilitar check disconnected nas waypoints".
     
 
 ### check_disconnected_habilitar()
-```
-check_disconnected_habilitar()
-```
-> realiza a mesma ação da Special Action "Habilitar check disconnected nas waypoints".
+Realiza a mesma ação da Special Action "Habilitar check disconnected nas waypoints".
     
 
 ### clicar_sqm(`clique, direção, vezes, delay cliques`)
