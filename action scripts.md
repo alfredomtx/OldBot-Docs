@@ -74,24 +74,24 @@ clicar_na_imagem(Right, 3, 1000, imagens_script\meuitem.png)
 * `param 3:` coordenada Y da tela
 * `param 4:` número <sub><sup> intervalo em milisegundos após clicar, o padrão é **1000ms** </sup></sub>
 ```
-clicar_posicao_tela(`Right, 1250, 350, 5`) 
+clicar_posicao_tela(Right, 1250, 350, 5) 
 ```
-> Clicar com o botão direito 5 vezes na posição x:1250, y:350 da tela.
+> Clicar com o botão direito 5 vezes na posição `x:1250`, `y:350` da tela.
 
 ### depositar_itens()
-Realiza a ação da Special Action "Procurar depot vazio e depositar itens", os itens a serem depositados e backpacks devem estar todos configurados préviamente em algum waypoint dessa ação.
+Realiza a ação da Special Action `Procurar depot vazio e depositar itens`, os itens a serem depositados e backpacks devem estar todos configurados préviamente em algum waypoint dessa ação.
 
 ### enviar_mensagem(`mensagem`)
 * `param 1:` texto
 ```
 enviar_mensagem(hi)
 ```
-> Enviar a mensagem "hi" no jogo.
+> Escrever e enviar a mensagem `hi` no jogo.
 
 ### executar_ahk_script(`nome script, aguardar_execução`)
 * `param 1:` texto
 * <sub><sup>(opc)</sup></sub> `param 2:` 0 ou 1
-	* (`verdadeiro/falso`) o padrão é 0. Se o valor for 1, irá aguardar o processo do AHK Script ser fechado para seguir para a próxima açãobas
+	* (`verdadeiro/falso`) o padrão é 0. Se o valor for 1, irá aguardar o processo do AHK Script ser fechado para seguir para a próxima ação.
 ```
 executar_ahk_script(`start ring refill v1.1`)
 ```
@@ -106,14 +106,15 @@ executar_ahk_script(`start ring refill v1.1`)
 ### esperar(`milisegundos`)
 * `param 1:` número
 ```
-    esperar(300)
+esperar(300)
 ```
-> realizar um "Sleep" de 300ms.
+> Realizar um "Sleep" de 300ms.
 
 
 
 ### fechar_cavebot()
 > Irá fechar o "executável" do Cavebot, o que irá parar o Cavebot/Targeting e precisará ser reaberto novamente. 
+>
 > Útil para fazer validações no script e impossibilitar o uso do script caso alguma validação não esteja correta.
 
  
