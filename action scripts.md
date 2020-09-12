@@ -14,7 +14,7 @@ Inclusive algumas Action Scripts possuem ações/opções disponiveis para uso q
 ### alarme_ativar()
 Realiza a mesma ação de quando o botão de Ativar Alarme é pressionado(`após ter clicado no botão para Parar o alarme`).
 
--
+--
 ### alarme_parar()
 Realiza a mesma ação de quando o botão de Parar Alarme é pressionado na tela do Painel do Cavebot.
 
