@@ -61,7 +61,7 @@ clicar_SQM(`Right, S, 1`)
 ``` 
 clicar_na_imagem(Left, 1, 1000, WP1.png) 
 ```
->Exemplo 1: Clicar com o botão esquerdo 1 vez na imagem "WP1.png" que está na pasta do script.
+>Exemplo 1: Clicar com o botão esquerdo 1 vez na imagem `WP1.png` que está na pasta do script.
 ``` 
 clicar_na_imagem(Right, 3, 1000, imagens_script\meuitem.png) 
 ```
