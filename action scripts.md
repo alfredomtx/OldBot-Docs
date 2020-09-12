@@ -56,7 +56,7 @@ clicar_SQM(`Right, S, 1`)
 * `param 2:` número
 * `param 3:` diretório da imagem <sub><sup>  que deve estar **dentro da pasta** do script atual </sup></sub>
 * <sub><sup>(opc)</sup></sub> `param 4:` número <sub><sup> intervalo em milisegundos após clicar, o padrão é **1000ms** </sup></sub>
-* <sub><sup>(opc)</sup></sub> `param 5:` número <sub><sup> nível de tolerância, de `30 a 80`, ao buscar pela imagem. Quanto menor mais preciso é a busca, o padrão é **45** </sup></sub>
+* <sub><sup>(opc)</sup></sub> `param 5:` número <sub><sup> nível de tolerância, de 30 a 80, ao buscar pela imagem. Quanto menor mais preciso é a busca, o padrão é **45** </sup></sub>
 
 ``` 
 clicar_na_imagem(Left, 1, 1000, WP1.png) 
@@ -198,7 +198,7 @@ mouse_drag(150, 200, 650, 350)
 * `param 1:` diretório da imagem <sub><sup>  que deve estar **dentro da pasta** do script atual </sup></sub>
 * `param 2:` diretório da imagem <sub><sup>  que deve estar **dentro da pasta** do script atual </sup></sub>
 * <sub><sup>(opc)</sup></sub> `param 3:` número <sub><sup> quantidade de vezes para repetir a ação, o padrão é 1 vez </sup></sub>
-* <sub><sup>(opc)</sup></sub> `param 5:` número <sub><sup> nível de tolerância, de `30 a 80`, ao buscar pela imagem. Quanto menor mais preciso é a busca, o padrão é **45** </sup></sub>
+* <sub><sup>(opc)</sup></sub> `param 5:` número <sub><sup> nível de tolerância, de 30 a 80, ao buscar pela imagem. Quanto menor mais preciso é a busca, o padrão é **45** </sup></sub>
 ```
 mouse_drag_imagem(`diamond_arrow.png, minha_backpack.png, 10`) 
 ```
