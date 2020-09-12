@@ -14,7 +14,7 @@ Inclusive algumas Action Scripts possuem ações/opções disponiveis para uso q
 ### alarme_ativar()
 Realiza a mesma ação de quando o botão de Ativar Alarme é pressionado(`após ter clicado no botão para Parar o alarme`).
 
---
+
 ### alarme_parar()
 Realiza a mesma ação de quando o botão de Parar Alarme é pressionado na tela do Painel do Cavebot.
 
@@ -48,7 +48,7 @@ Realiza a mesma ação da Special Action `Habilitar check disconnected nas waypo
 ```
 clicar_SQM(Right, S, 1) 
 ```
-> Clicar com o botão direito 1 vez no SQM ao Sul do char.
+> Clicar com o botão `direito` `1` vez no SQM ao `Sul` do char.
   
   
 ### clicar_na_imagem(`clique, vezes, diretório imagem, delay cliques, tolerância`)
@@ -61,11 +61,11 @@ clicar_SQM(Right, S, 1)
 ``` 
 clicar_na_imagem(Left, 1, 1000, WP1.png) 
 ```
->Exemplo 1: Clicar com o botão esquerdo 1 vez na imagem `WP1.png` que está na pasta do script.
+>Exemplo 1: Clicar com o botão `esquerdo` 1 vez na imagem `WP1.png` que está na pasta do script.
 ``` 
 clicar_na_imagem(Right, 3, 1000, imagens_script\meuitem.png) 
 ```
-> Exemplo 2: Clicar com o botão direito 1 vez na imagem **`meuitem.png`** que está dentro da pasta **`imagens_script`** dentro da **pasta do script**.
+> Exemplo 2: Clicar com o botão `direito` `1` vez na imagem **`meuitem.png`** que está dentro da pasta **`imagens_script`** dentro da **pasta do script**.
 
 
 ### clicar_posicao_tela(`clique, x, y, vezes, delay cliques`)
@@ -76,7 +76,7 @@ clicar_na_imagem(Right, 3, 1000, imagens_script\meuitem.png)
 ```
 clicar_posicao_tela(Right, 1250, 350, 5) 
 ```
-> Clicar com o botão direito 5 vezes na posição `x:1250`, `y:350` da tela.
+> Clicar com o botão `direito` `5` vezes na posição `x:1250`, `y:350` da tela.
 
 ### depositar_itens()
 Realiza a ação da Special Action `Procurar depot vazio e depositar itens`, os itens a serem depositados e backpacks devem estar todos configurados préviamente em algum waypoint dessa ação.
@@ -192,7 +192,7 @@ mouse_move(150, 200)
 ```
 mouse_drag(150, 200, 650, 350) 
 ```
->Clicar com o botão esquerdo na posição `x:150, y:200` e arrastar o mouse até a posição `x:650, y:350` na tela.
+>Clicar com o botão `esquerdo` na posição `x:150, y:200` e arrastar o mouse até a posição `x:650, y:350` na tela.
 
 
 ### mouse_drag_imagem(`diretório imagem origem, diretório imagem destino, vezes, tolerância`)
