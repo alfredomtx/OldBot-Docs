@@ -113,9 +113,8 @@ esperar(300)
 
 
 ### fechar_cavebot()
-> Irá fechar o "executável" do Cavebot, o que irá parar o Cavebot/Targeting e precisará ser reaberto novamente. 
->
-> Útil para fazer validações no script e impossibilitar o uso do script caso alguma validação não esteja correta.
+Fechar o "executável" do Cavebot, o que irá parar o Cavebot/Targeting e precisará ser reaberto novamente. 
+Útil para fazer validações no script e impossibilitar o uso do script caso alguma validação não esteja correta.
 
  
 ### intervalo_andar_waypoint(`milisegundos`)
@@ -153,12 +152,13 @@ Realiza a mesma ação da Special Action "Desabilitar Looter".
 Realiza a mesma ação da Special Action "Habilitar Looter".
 
 
-### luring_mode_iniciar(`quantidade_monstros`)
+### luring_mode_iniciar(`quantidade monstros`)
 * `param 1:` número
+	* quantidade mínima de monstros no Battle List para começar a atacar
 ```
 luring_mode_iniciar(3)
 ```
-> iniciar o Luring Mode e parar para atacar somente quando houver 3 monstros ou mais no Battle List.
+> Iniciar o Luring Mode e parar para atacar somente quando houver 3 monstros ou mais no Battle List.
 
 
 ### luring_mode_parar()
@@ -166,7 +166,7 @@ luring_mode_iniciar(3)
     
 
 ### message_box(`mensagem`)
-Realiza a mesma ação da Special Action "Mostrar MessageBox na tela".
+Realiza a mesma ação da Special Action `Mostrar MessageBox na tela`.
 * `param 1:` texto
 ```
 message_box(`você está usando o OldBot`)
@@ -178,7 +178,7 @@ message_box(`você está usando o OldBot`)
 * `param 1:` coordenada X da tela
 * `param 2:` coordenada Y da tela
 ```
-mouse_move(`150, 200`)
+mouse_move(150, 200)
 ```
 > Mover o mouse até a posição x:150, y:200 na tela.
 
@@ -211,7 +211,7 @@ mouse_drag_imagem(`diamond_arrow.png, minha_backpack.png, 10`)
 	* O monstro deve estar cadastrado na **lista geral dos monstros**`(Cavebot\monstros.ini)` na tela do Targeting
 * `param 2:` tecla <sub><sup> hotkey da magia para usar ao atacar esse monstro, **será pressionada a cada 2 segundos** </sup></sub>
 ```
-monstro_adicionar_lista_atacar(`adventurer, F1`) 
+monstro_adicionar_lista_atacar(adventurer, F1) 
 ```
 > Adicionar o monstro `adventurer` na lista dos monstros para ser atacado pelo Targeting, utilizando a magia da hotkey `F1`.
 
@@ -220,7 +220,7 @@ monstro_adicionar_lista_atacar(`adventurer, F1`)
 * `param 1:` nome do monstro
 	* O monstro deve estar cadastrado na **lista geral dos monstros**`(Cavebot\monstros.ini)` na tela do Targeting
 ```
-monstro_remover_lista_atacar(`adventurer`) 
+monstro_remover_lista_atacar(adventurer) 
 ```
 > Remover o monstro `adventurer` da lista dos monstros para serem atacados pelo Targeting(da lista do script).
 
@@ -248,16 +248,16 @@ pressionar_tecla(a, 5)
 > Pressionar a tecla "a" 5 vezes.
 
 
-### reabrir_cavebot()S
-Similar a action fechar_cavebot(), porém ao invés de fechar irá reabrir o "executável" do Cavebot/Targetingmesma ação do botão "Reload" do painel do Cavebot.
+### reabrir_cavebot()
+Similar a action `fechar_cavebot()`, porém ao invés de fechar irá reabrir o "executável" do Cavebot/Targeting. É a mesma ação do botão de `Reload` do painel do Cavebot.
 
 
 ### targeting_desabilitar()
-Realiza a mesma ação da Special Action "Desabilitar Targeting".
+Realiza a mesma ação da Special Action `Desabilitar Targeting`.
  
  
 ### targeting_habilitar()
-Realiza a mesma ação da Special Action "Habilitar Targeting".
+Realiza a mesma ação da Special Action `Habilitar Targeting`.
     
 
 ### variavel_setar_valor(`nome_variável, valor`)
@@ -271,21 +271,21 @@ variavel_setar_valor(AntiKS, 1)
 ```
 variavel_setar_valor(quantidade_potions_comprar, 250) 
 ```
-> Muda o valor da variável `quantidade_potions_comprar` para `250`.
+> Muda o valor da variável(do script) `quantidade_potions_comprar` para `250`.
 
 
 ### virar_char_direcao(`direção`)
 * `param 1:` S `\/`, O `<`, L `>`, N `/\`
 ```
-virar_char_direcao(`S`)
+virar_char_direcao(S)
 ```
 > Virar o char para a direção Sul.
 
 
 ### zoom_minimapa(`zoom`)
-* `param 1:` número de 1 a 4
+* `param 1:` número de `1` a `4`
 ```
-zoom_minimapa(`4`)
+zoom_minimapa(4)
 ```
 > Alterar o zoom do minimapa para o nível 4.
 
@@ -356,13 +356,13 @@ message_box(AntiKS desligado) [se a a variável for (AntiKS, diferente, 1)]
 	* de `-8` a `7`, sendo `0` o térreo
 * `param 2:` "igual" ou "diferente"
 ```
-message_box(`Está no subsolo -1`) [se o floor for (`-1, igual`)] 
+message_box(Está no subsolo -1) [se o floor for (-1, igual)] 
 ```
-> Exibir uma MessageBox escrito "Está no subsolo -1" se o floor(`nível do solo no tibia`) for igual a -1.
+> Exibir uma MessageBox escrito `"Está no subsolo -1"` se o floor(nível do solo no tibia) for `igual a -1`.
 ```
-message_box(`Não está no térreo`) [se o floor for (`0, diferente`)] 
+message_box(Não está no térreo) [se o floor for (0, diferente)] 
 ```
-> Exibir uma MessageBox escrito "Não está no térreo" se o floor(`nível do solo no tibia`) for diferente de 0.
+> Exibir uma MessageBox escrito `"Não está no térreo"` se o floor(nível do solo no tibia) for `diferente de 0`.
 
 ## `PARÂMETRO "abortar ações*"`
 Opcional em todas as condições, pode ser  **`0` ou `1`**.
@@ -381,6 +381,7 @@ clicar_sqm($clique, $sqm_clicar, $vezes_clicar_sqm)
 ```
 > Clicar com o botão do mouse configurado na variável `$clique` no sqm `$sqm_clicar`, repetir a ação `$vezes_clicar_sqm` vezes.
 
+---
 
 # Regras de criação de Action Script:
 1. Seguir o formato em minúsculo ao escrever o nome das funções.
@@ -389,6 +390,7 @@ clicar_sqm($clique, $sqm_clicar, $vezes_clicar_sqm)
 4. A condição deve ser no mesmo modelo em que é colocada na linha ao selecionar uma condição na lista - após a action, entre chaves [] e com os valores dentro de parênteses ().
 5. Não pode haver espaço a esquerda do primeiro parâmetro da função:
 	> Exemplo **correto**: `pressionar_tecla(Down, 2)`
+	>
 	> Exemplo **incorreto**: `pressionar_tecla( Down, 2)` - espaço a esquerda do `Down`.
 
 ---
