@@ -176,9 +176,9 @@ luring_mode_iniciar(3)
 Realiza a mesma ação da Special Action `Mostrar MessageBox na tela`.
 * `param 1:` texto
 ```
-message_box(`você está usando o OldBot`)
+message_box(você está usando o OldBot)
 ```
-> Mostrar uma MessageBox na tela escrito `você está usando o OldBot`.
+> Mostrar uma MessageBox na tela com a mensagem `"você está usando o OldBot"`.
 
 
 ### mouse_move(`x, y`)
@@ -195,7 +195,8 @@ mouse_move(150, 200)
 * `param 2:` coordenada Y da tela
 * `param 3:` coordenada X da tela
 * `param 4:` coordenada Y da tela
-* <sub><sup>(opc)</sup></sub> `param 5:` número <sub><sup> quantidade de vezes para repetir a ação, o padrão é 1 vez </sup></sub>
+* <sub><sup>(opc)</sup></sub> `param 5:` número <sub><sup> quantidade de vezes para repetir a ação </sup></sub>
+	* `default:` 1
 ```
 mouse_drag(150, 200, 650, 350) 
 ```
@@ -205,7 +206,8 @@ mouse_drag(150, 200, 650, 350)
 ### mouse_drag_imagem(`diretório imagem origem, diretório imagem destino, vezes, tolerância`)
 * `param 1:` diretório da imagem <sub><sup>  que deve estar **dentro da pasta** do script atual </sup></sub>
 * `param 2:` diretório da imagem <sub><sup>  que deve estar **dentro da pasta** do script atual </sup></sub>
-* <sub><sup>(opc)</sup></sub> `param 3:` número <sub><sup> quantidade de vezes para repetir a ação, o padrão é 1 vez </sup></sub>
+* <sub><sup>(opc)</sup></sub> `param 3:` número <sub><sup> quantidade de vezes para repetir a ação </sup></sub>
+	* `default:` 1
 * <sub><sup>(opc)</sup></sub> `param 5:` número <sub><sup> nível de tolerância, de 30 a 80, ao buscar pela imagem, quanto menor mais preciso é a busca </sup></sub>
 	* `default:` 45
 ```
@@ -236,7 +238,7 @@ monstro_remover_lista_atacar(adventurer)
 ### pressionar_tecla(`tecla, vezes,  delay`)
 * `param 1:` tecla - <a href="https://www.autohotkey.com/docs/commands/Send.htm#keynames" target="_blank">lista de teclas</a>
 * `param 2:` número 
-* `param 3:` número <sub><sup> intervalo em milisegundos após clicar</sup></sub>
+* `param 3:` número <sub><sup> intervalo em milisegundos após pressionar </sup></sub>
 	* `default:` 250
 ##### Exemplos:
 ```  
@@ -272,7 +274,7 @@ Realiza a mesma ação da Special Action `Habilitar Targeting`.
 ### variavel_setar_valor(`nome_variável, valor`)
 * `param 1:` nome da variável
 	*  [ ] pendente criação de documentação das variáveis
-* `param 2:` valor da variáver **`sem $`**
+* `param 2:` valor da variável **`sem $`**
 ```
 variavel_setar_valor(AntiKS, 1) 
 ```
@@ -286,9 +288,9 @@ variavel_setar_valor(quantidade_potions_comprar, 250)
 ### virar_char_direcao(`direção`)
 * `param 1:` S `\/`, O `<`, L `>`, N `/\`
 ```
-virar_char_direcao(S)
+virar_char_direcao(N)
 ```
-> Virar o char para a direção Sul.
+> Virar o char para a direção `Norte`.
 
 
 ### zoom_minimapa(`zoom`)
@@ -296,7 +298,7 @@ virar_char_direcao(S)
 ```
 zoom_minimapa(4)
 ```
-> Alterar o zoom do minimapa para o nível 4.
+> Alterar o zoom do minimapa para o nível `4`.
 
 
 ---
@@ -395,9 +397,9 @@ clicar_sqm($clique, $sqm_clicar, $vezes_clicar_sqm)
 # Regras de criação de Action Script:
 1. Seguir o formato em minúsculo ao escrever o nome das funções.
 2. Se a função possui mais de um parâmetro, cada parâmetro deve ser separado por vírgula(`,`).
-3. Para escrever um comentário, iniciar a linha com hashtag(`#`)
+3. Para escrever um comentário, iniciar a linha com hashtag(`#`).
 4. A condição deve ser no mesmo modelo em que é colocada na linha ao selecionar uma condição na lista - após a action, entre chaves `[]` e com os valores dentro de parênteses `()`.
-5. Não pode haver espaço a esquerda do primeiro parâmetro da função:
+5. Não pode haver espaço a esquerda do primeiro parâmetro da função, exemplos:
 	> Exemplo **correto**: `pressionar_tecla(Down, 2)`
 	>
 	> Exemplo **incorreto**: `pressionar_tecla( Down, 2)` - espaço a esquerda do `Down`.
