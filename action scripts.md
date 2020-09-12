@@ -387,7 +387,7 @@ clicar_sqm($clique, $sqm_clicar, $vezes_clicar_sqm)
 1. Seguir o formato em minúsculo ao escrever o nome das funções.
 2. Se a função possui mais de um parâmetro, cada parâmetro deve ser separado por vírgula(`,`).
 3. Para escrever um comentário, iniciar a linha com hashtag(`#`)
-4. A condição deve ser no mesmo modelo em que é colocada na linha ao selecionar uma condição na lista - após a action, entre chaves [] e com os valores dentro de parênteses ().
+4. A condição deve ser no mesmo modelo em que é colocada na linha ao selecionar uma condição na lista - após a action, entre chaves `[]` e com os valores dentro de parênteses `()`.
 5. Não pode haver espaço a esquerda do primeiro parâmetro da função:
 	> Exemplo **correto**: `pressionar_tecla(Down, 2)`
 	>
