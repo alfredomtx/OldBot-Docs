@@ -95,7 +95,7 @@ enviar_mensagem(hi)
 * `param 1:` texto
 * <sub><sup>(opc)</sup></sub> `param 2:` 0 ou 1
 	* `default:` 0
-	* Se o valor for 1, irá aguardar o processo do AHK Script ser fechado para seguir para a próxima ação.
+	* Se = 1, irá aguardar o processo do AHK Script ser fechado para seguir para a próxima ação.
 ```
 executar_ahk_script(`start ring refill v1.1`)
 ```
@@ -105,7 +105,7 @@ executar_ahk_script(`start ring refill v1.1`)
 ### exitar_jogo(`tirar_screenshot`)
 * <sub><sup>(opc)</sup></sub> `param 1:` 0 ou 1
 	* `default:` 1
-	* Se 1, irá tirar uma screenshot da tela antes de exitar o jogo.
+	* Se = 1 irá tirar uma screenshot da tela antes de exitar o jogo.
 
 
 ### esperar(`milisegundos`)
@@ -132,8 +132,8 @@ intervalo_andar_waypoint(3000)
 ### ir_para_waypoint(`waypoint, abortar ações`)
 * `param 1:` número
 * <sub><sup>(opc)</sup></sub> `param 2:` 0 ou 1
-	* se for 1, irá abortar próximas as ações do Action Script e ir para o Waypoint
 	* `default:` 1
+	* se = 1, irá abortar próximas as ações do Action Script e ir para o Waypoint
 ```
 ir_para_waypoint(1)
 ```
@@ -143,8 +143,8 @@ ir_para_waypoint(1)
 ### ir_para_label(`label, abortar ações`)
 * `param 1:` texto
 * <sub><sup>(opc)</sup></sub> `param 2:` 0 ou 1
-	* se for 1, irá abortar próximas as ações do Action Script e ir para o Label
 	* `default:` 1
+	* se = 1, irá abortar próximas as ações do Action Script e ir para o Label
 ```
 ir_para_label(comprar_supply)
 ```
