@@ -32,11 +32,11 @@ Realiza a mesma ação da Special Action "Checar lixos para dropar".
     
 
 ### check_disconnected_desabilitar()
-Realiza a mesma ação da Special Action "Desabilitar check disconnected nas waypoints".
+Realiza a mesma ação da Special Action `Desabilitar check disconnected nas waypoints`.
     
 
 ### check_disconnected_habilitar()
-Realiza a mesma ação da Special Action "Habilitar check disconnected nas waypoints".
+Realiza a mesma ação da Special Action `Habilitar check disconnected nas waypoints`.
     
 
 ### clicar_sqm(`clique, direção, vezes, delay cliques`)
@@ -46,7 +46,7 @@ Realiza a mesma ação da Special Action "Habilitar check disconnected nas waypo
 * <sub><sup>(opc)</sup></sub> `param 4:` número <sub><sup> intervalo em milisegundos após clicar, o padrão é **1000ms** </sup></sub>
 * <sub><sup>(opc)</sup></sub> `param 5:` número
 ```
-clicar_SQM(`Right, S, 1`) 
+clicar_SQM(Right, S, 1) 
 ```
 > Clicar com o botão direito 1 vez no SQM ao Sul do char.
   
