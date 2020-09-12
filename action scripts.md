@@ -57,7 +57,7 @@ clicar_SQM(Right, S, 1)
 * `param 3:` diretório da imagem <sub><sup>  que deve estar **dentro da pasta** do script atual </sup></sub>
 * <sub><sup>(opc)</sup></sub> `param 4:` número <sub><sup> intervalo em milisegundos após clicar </sup></sub>
 	* `default:` 1000
-* <sub><sup>(opc)</sup></sub> `param 5:` número <sub><sup> nível de tolerância, de 30 a 80, ao buscar pela imagem. Quanto menor mais preciso é a busca </sup></sub>
+* <sub><sup>(opc)</sup></sub> `param 5:` número <sub><sup> nível de tolerância, de 30 a 80, ao buscar pela imagem, quanto menor mais preciso é a busca </sup></sub>
 	* `default:` 45
 
 ``` 
@@ -132,7 +132,8 @@ intervalo_andar_waypoint(3000)
 ### ir_para_waypoint(`waypoint, abortar ações`)
 * `param 1:` número
 * <sub><sup>(opc)</sup></sub> `param 2:` 0 ou 1
-	* se for 1, irá abortar próximas as ações do Action Script e ir para o Waypoint, o padrão é 1
+	* se for 1, irá abortar próximas as ações do Action Script e ir para o Waypoint
+	* `default:` 1
 ```
 ir_para_waypoint(1)
 ```
@@ -142,7 +143,8 @@ ir_para_waypoint(1)
 ### ir_para_label(`label, abortar ações`)
 * `param 1:` texto
 * <sub><sup>(opc)</sup></sub> `param 2:` 0 ou 1
-	* se for 1, irá abortar próximas as ações do Action Script e ir para o Label, o padrão é 1
+	* se for 1, irá abortar próximas as ações do Action Script e ir para o Label
+	* `default:` 1
 ```
 ir_para_label(comprar_supply)
 ```
@@ -204,7 +206,7 @@ mouse_drag(150, 200, 650, 350)
 * `param 1:` diretório da imagem <sub><sup>  que deve estar **dentro da pasta** do script atual </sup></sub>
 * `param 2:` diretório da imagem <sub><sup>  que deve estar **dentro da pasta** do script atual </sup></sub>
 * <sub><sup>(opc)</sup></sub> `param 3:` número <sub><sup> quantidade de vezes para repetir a ação, o padrão é 1 vez </sup></sub>
-* <sub><sup>(opc)</sup></sub> `param 5:` número <sub><sup> nível de tolerância, de 30 a 80, ao buscar pela imagem. Quanto menor mais preciso é a busca </sup></sub>
+* <sub><sup>(opc)</sup></sub> `param 5:` número <sub><sup> nível de tolerância, de 30 a 80, ao buscar pela imagem, quanto menor mais preciso é a busca </sup></sub>
 	* `default:` 45
 ```
 mouse_drag_imagem(`diamond_arrow.png, minha_backpack.png, 10`) 
