@@ -44,8 +44,7 @@ Realiza a mesma ação da Special Action `Habilitar check disconnected nas waypo
 * `param 2:` SO, S `\/`, SE, O `<`, C`(char)`, L `>`, NO, N `/\`, NE
 * `param 3:` número
 * <sub><sup>(opc)</sup></sub> `param 4:` número <sub><sup> intervalo em milisegundos após clicar </sup></sub>
-	* `default:` 1000ms
-* <sub><sup>(opc)</sup></sub> `param 5:` número
+	* `default:` 1000
 ```
 clicar_SQM(Right, S, 1) 
 ```
@@ -57,8 +56,9 @@ clicar_SQM(Right, S, 1)
 * `param 2:` número
 * `param 3:` diretório da imagem <sub><sup>  que deve estar **dentro da pasta** do script atual </sup></sub>
 * <sub><sup>(opc)</sup></sub> `param 4:` número <sub><sup> intervalo em milisegundos após clicar </sup></sub>
-	* `default:` 1000ms
-* <sub><sup>(opc)</sup></sub> `param 5:` número <sub><sup> nível de tolerância, de 30 a 80, ao buscar pela imagem. Quanto menor mais preciso é a busca, o padrão é **45** </sup></sub>
+	* `default:` 1000
+* <sub><sup>(opc)</sup></sub> `param 5:` número <sub><sup> nível de tolerância, de 30 a 80, ao buscar pela imagem. Quanto menor mais preciso é a busca </sup></sub>
+	* `default:` 45
 
 ``` 
 clicar_na_imagem(Left, 1, 1000, WP1.png) 
@@ -75,7 +75,7 @@ clicar_na_imagem(Right, 3, 1000, imagens_script\meuitem.png)
 * `param 2:` coordenada X da tela
 * `param 3:` coordenada Y da tela
 * `param 4:` número <sub><sup> intervalo em milisegundos após clicar </sup></sub>
-	* `default:` 1000ms
+	* `default:` 1000
 ```
 clicar_posicao_tela(Right, 1250, 350, 5) 
 ```
@@ -204,7 +204,8 @@ mouse_drag(150, 200, 650, 350)
 * `param 1:` diretório da imagem <sub><sup>  que deve estar **dentro da pasta** do script atual </sup></sub>
 * `param 2:` diretório da imagem <sub><sup>  que deve estar **dentro da pasta** do script atual </sup></sub>
 * <sub><sup>(opc)</sup></sub> `param 3:` número <sub><sup> quantidade de vezes para repetir a ação, o padrão é 1 vez </sup></sub>
-* <sub><sup>(opc)</sup></sub> `param 5:` número <sub><sup> nível de tolerância, de 30 a 80, ao buscar pela imagem. Quanto menor mais preciso é a busca, o padrão é **45** </sup></sub>
+* <sub><sup>(opc)</sup></sub> `param 5:` número <sub><sup> nível de tolerância, de 30 a 80, ao buscar pela imagem. Quanto menor mais preciso é a busca </sup></sub>
+	* `default:` 45
 ```
 mouse_drag_imagem(`diamond_arrow.png, minha_backpack.png, 10`) 
 ```
@@ -233,7 +234,8 @@ monstro_remover_lista_atacar(adventurer)
 ### pressionar_tecla(`tecla, vezes,  delay`)
 * `param 1:` tecla - <a href="https://www.autohotkey.com/docs/commands/Send.htm#keynames" target="_blank">lista de teclas</a>
 * `param 2:` número 
-* `param 3:` número <sub><sup> intervalo em milisegundos após clicar, o padrão é **250ms**</sup></sub>
+* `param 3:` número <sub><sup> intervalo em milisegundos após clicar</sup></sub>
+	* `default:` 250
 ##### Exemplos:
 ```  
 pressionar_tecla(Up, 3)
