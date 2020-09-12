@@ -13,31 +13,31 @@ Inclusive algumas Action Scripts possuem ações/opções disponiveis para uso q
 # Action Scripts
 ### alarme_ativar()
 Realiza a mesma ação de quando o botão de Ativar Alarme é pressionado(`após ter clicado no botão para Parar o alarme`).
-    
 
+-
 ### alarme_parar()
 Realiza a mesma ação de quando o botão de Parar Alarme é pressionado na tela do Painel do Cavebot.
-    
+
 
 ### ativar_server_log()
 Procura pela aba do chat do Server Log e clica para ativá-lonecessário para a função de lootear somente com loot valioso/pular loot vazio que precisa do Server Log visível.
-    
+
 
 ### atualizar_posicao_char()
 Realiza a função de detectar a posição central do char na tela e atualiza os valores, função compatível com **Tibia 11 e 12** somente.
-    
+
 
 ### checar_lixos_dropar()
 Realiza a mesma ação da Special Action "Checar lixos para dropar".
-    
+
 
 ### check_disconnected_desabilitar()
 Realiza a mesma ação da Special Action `Desabilitar check disconnected nas waypoints`.
-    
+
 
 ### check_disconnected_habilitar()
 Realiza a mesma ação da Special Action `Habilitar check disconnected nas waypoints`.
-    
+
 
 ### clicar_sqm(`clique, direção, vezes, delay cliques`)
 * `param 1:` "Left" ou "Right"
@@ -163,7 +163,7 @@ luring_mode_iniciar(3)
 
 ### luring_mode_parar()
 > Parar o Luring Mode e voltar a atacar normalmente.
-    
+
 
 ### message_box(`mensagem`)
 Realiza a mesma ação da Special Action `Mostrar MessageBox na tela`.
@@ -230,7 +230,7 @@ monstro_remover_lista_atacar(adventurer)
 * `param 2:` número 
 * `param 3:` número <sub><sup> intervalo em milisegundos após clicar, o padrão é **250ms**</sup></sub>
 ##### Exemplos:
-```      
+```  
 pressionar_tecla(Up, 3)
 ```
 > Pressionar a `seta para cima` 3 vezes
@@ -258,7 +258,7 @@ Realiza a mesma ação da Special Action `Desabilitar Targeting`.
  
 ### targeting_habilitar()
 Realiza a mesma ação da Special Action `Habilitar Targeting`.
-    
+
 
 ### variavel_setar_valor(`nome_variável, valor`)
 * `param 1:` nome da variável
@@ -302,7 +302,7 @@ message_box(cap abaixo do selecionado) [se cap for menor que (50)]
 ```
 > Exibir uma MessageBox escrito `"cap abaixo do selecionado"` se a o cap for menor que `50`.
 
-    
+
 
 ### se potion for menor que(`nome da potion, quantidade, abortar ações*`)
 * `param 1:` nome da potion
