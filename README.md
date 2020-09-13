@@ -1,2 +1,2 @@
 # OldBot-Docs
-Documentações do OldBot
+Repositório de documentações oficiais do OldBot.
