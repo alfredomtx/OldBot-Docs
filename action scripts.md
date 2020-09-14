@@ -1,7 +1,3 @@
-
-
-
-
 # Introdução
 Action Scripts são utilizados para escrever um código para realizar diversas ações em sequência, sem a necessidade de criar 1 Waypoint para cada ação utilizando Special Actions.
 
