@@ -259,7 +259,7 @@ pressionar_tecla(a, 5)
 Similar a action `fechar_cavebot()`, porém ao invés de fechar irá reabrir o "executável" do Cavebot/Targeting. É a mesma ação do botão de `Reload` do painel do Cavebot.
 
 
-### reabrir_cavebot()
+### screenshot()
 Tira uma screenshot da tela, que fica salva na pasta `Data\Screenshots\` no diretório do OldBot. O nome do arquivo tem como padrão `Screenshot_ActionScript*.png`, onde `*` é um número sequencial.
 
 
