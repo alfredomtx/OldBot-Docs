@@ -281,6 +281,7 @@ use_sqm(S)
 
 
 ### variavel_setar_valor(`nome_variável, valor`)
+Seta o valor desejado na variável escolhida, é muito útil para alterar configurações(variáveis) padrões do bot no decorrer do script.
 * `param 1:` nome da variável
 	*  [ ] pendente criação de documentação das variáveis
 * `param 2:` valor da variável **`sem $`**
