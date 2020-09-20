@@ -272,7 +272,7 @@ Realiza a mesma ação da Special Action `Habilitar Targeting`.
 
 
 ### use_sqm(`direção`)
-Realiza a ação de "Use" no SQM, pode ser utilizado para abrir portas, subir escadas(Ladder), etc.
+Realiza a ação de "Use" no SQM, pode ser utilizado para abrir portas, subir escadas(Ladder), etc. O diferencial dessa função ao invés de simplesmente clicar com o botão direito no SQM, é que a ação de "Use" será realizada mesmo se houver algum player/monstro ou item em cima do SQM.
 * `param 1:` SO, S `\/`, SE, O `<`, C`(char)`, L `>`, NO, N `/\`, NE
 ```
 use_sqm(S) 
