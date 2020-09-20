@@ -271,6 +271,15 @@ Realiza a mesma ação da Special Action `Desabilitar Targeting`.
 Realiza a mesma ação da Special Action `Habilitar Targeting`.
 
 
+### use_sqm(`direção`)
+Realiza a ação de "Use" no SQM, pode ser utilizado para abrir portas, subir escadas(Ladder), etc.
+* `param 1:` SO, S `\/`, SE, O `<`, C`(char)`, L `>`, NO, N `/\`, NE
+```
+use_sqm(S) 
+```
+> Realizar a ação de "Use" SQM ao `Sul` do char.
+
+
 ### variavel_setar_valor(`nome_variável, valor`)
 * `param 1:` nome da variável
 	*  [ ] pendente criação de documentação das variáveis
