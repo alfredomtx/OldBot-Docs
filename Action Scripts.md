@@ -1,12 +1,12 @@
-# Introdução
+# Introdução:
 Action Scripts são utilizados para escrever um código para realizar diversas ações em sequência, sem a necessidade de criar 1 Waypoint para cada ação utilizando Special Actions.
 
 Com isto, podemos agrupar ações que são comumente usadas repetitivamente em um único waypoint de Action Script, que conterá o código para realizá-las.
-Inclusive algumas Action Scripts possuem ações/opções disponiveis para uso que Special Actions não possuem.
+Inclusive algumas Action Scripts possuem várias ações/opções disponiveis para uso que Special Actions não possuem.
 
 ---
 
-# Action Scripts
+# Action Scripts:
 ### alarme_ativar()
 Realiza a mesma ação de quando o botão de Ativar Alarme é pressionado(`após ter clicado no botão para Parar o alarme`).
 
