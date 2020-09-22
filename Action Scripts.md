@@ -30,7 +30,7 @@ Realiza a mesma ação da Special Action "Checar lixos para dropar".
 ### check_disconnected_desabilitar()
 Realiza a mesma ação da Special Action `Desabilitar check disconnected nas waypoints`.
 
-
+  
 ### check_disconnected_habilitar()
 Realiza a mesma ação da Special Action `Habilitar check disconnected nas waypoints`.
 
