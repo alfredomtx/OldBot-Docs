@@ -32,8 +32,7 @@ Realiza a mesma ação da Special Action `Desabilitar check disconnected nas way
 
 
 ### check_disconnected_habilitar()
-Realiza a mesma ação da Special Action `Habilitar check disconnected nas waypoints`.  
-
+Realiza a mesma ação da Special Action `Habilitar check disconnected nas waypoints`.
 
 
 ### clicar_sqm(`clique, direção, vezes, delay cliques`)
