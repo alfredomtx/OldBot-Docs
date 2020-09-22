@@ -8,11 +8,11 @@ Inclusive algumas Action Scripts possuem várias ações/opções disponiveis pa
 
 # Action Scripts:
 ### alarme_ativar()
-Realiza a mesma ação de quando o botão de Ativar Alarme é pressionado(`após ter clicado no botão para Parar o alarme`).
+Realiza a mesma ação de quando o botão de Ativar Alarme é pressionado(`após ter clicado no botão para "Parar" o alarme`).
 
 
 ### alarme_parar()
-Realiza a mesma ação de quando o botão de Parar Alarme é pressionado na tela do Painel do Cavebot.
+Procurar e jogar no chão(na posição do char) todos os itens configurados para serem dropados na tela do Looting. Realiza a mesma ação de quando o botão de Parar Alarme é pressionado na tela do Painel do Cavebot.
 
 
 ### ativar_server_log()
@@ -36,6 +36,7 @@ Realiza a mesma ação da Special Action `Habilitar check disconnected nas waypo
 
 
 ### clicar_sqm(`clique, direção, vezes, delay cliques`)
+Clicar em um dos SQMs em volta do char(ou no SQM do char).
 * `param 1:` "Left" ou "Right"
 * `param 2:` SO, S `\/`, SE, O `<`, C`(char)`, L `>`, NO, N `/\`, NE
 * `param 3:` número
@@ -48,6 +49,7 @@ clicar_SQM(Right, S, 1)
   
   
 ### clicar_na_imagem(`clique, vezes, diretório imagem, delay cliques, tolerância`)
+Procurar por uma imagem na tela e, se encontrada, clicar nela(no centro da imagem). A busca da imagem é realizada somente na área do cliente, e não na tela inteira.
 * `param 1:` "Left" ou "Right"
 * `param 2:` número
 * `param 3:` diretório da imagem <sub><sup>  que deve estar **dentro da pasta** do script atual </sup></sub>
@@ -67,6 +69,7 @@ clicar_na_imagem(Right, 3, 1000, imagens_script\meuitem.png)
 
 
 ### clicar_posicao_tela(`clique, x, y, vezes, delay cliques`)
+Clicar em uma posição específica na tela.
 * `param 1:` "Left" ou "Right"
 * `param 2:` coordenada X da tela
 * `param 3:` coordenada Y da tela
@@ -81,6 +84,7 @@ clicar_posicao_tela(Right, 1250, 350, 5)
 Realiza a ação da Special Action `Procurar depot vazio e depositar itens`, os itens a serem depositados e backpacks devem estar todos configurados préviamente em algum waypoint dessa ação.
 
 ### enviar_mensagem(`mensagem`)
+Escrever e enviar uma mensagem no jogo, no chat que estiver ativo no momento.
 * `param 1:` texto
 ```
 enviar_mensagem(hi)
@@ -88,6 +92,7 @@ enviar_mensagem(hi)
 > Escrever e enviar a mensagem `hi` no jogo.
 
 ### executar_ahk_script(`nome script, aguardar_execução`)
+Executar um dos `AHK Scripts` que se encontram na pasta `AHK Scripts` no diretório do OldBot.
 * `param 1:` texto
 * <sub><sup>(opc)</sup></sub> `param 2:` 0 ou 1
 	* `default:` 0
@@ -99,12 +104,14 @@ executar_ahk_script(`start ring refill v1.1`)
 
 
 ### exitar_jogo(`tirar_screenshot`)
+Realizar a ação e exitar o jogo, pressionando no botão `Exit`, com a opção de tirar uma screenshot antes de clicar no botão.
 * <sub><sup>(opc)</sup></sub> `param 1:` 0 ou 1
 	* `default:` 1
 	* se = 1 irá tirar uma screenshot da tela antes de exitar o jogo.
 
 
 ### esperar(`milisegundos`)
+Realizar um sleep/delay antes de realizar uma nova ação.
 * `param 1:` número
 ```
 esperar(300)
@@ -156,6 +163,7 @@ Realiza a mesma ação da Special Action "Habilitar Looter".
 
 
 ### luring_mode_iniciar(`quantidade monstros`)
+Iniciar o `Luring Mode`, onde o char continuará andando nos waypoints do Cavebot e ignorando o Targeting(os monstros para atacar) até que uma quantidade `X` de montros estejam aparecendo no `Battle List`.
 * `param 1:` número
 	* quantidade mínima de monstros no Battle List para começar a atacar
 ```
@@ -169,7 +177,7 @@ luring_mode_iniciar(3)
 
 
 ### message_box(`mensagem`)
-Realiza a mesma ação da Special Action `Mostrar MessageBox na tela`.
+Mostrar uma `MessageBox` na tela, nenhuma próxima ação do Cavebot/Targeting será executada até que a janela da mensagem seja confirmada/fechada. Realiza a mesma ação da Special Action `Mostrar MessageBox na tela`.
 * `param 1:` texto
 ```
 message_box(você está usando o OldBot)
@@ -178,6 +186,7 @@ message_box(você está usando o OldBot)
 
 
 ### mouse_move(`x, y`)
+Mover o mouse para uma posição específica da tela.
 * `param 1:` coordenada X da tela
 * `param 2:` coordenada Y da tela
 ```
@@ -187,6 +196,7 @@ mouse_move(150, 200)
 
 
 ### mouse_drag(`x1, y1, x2, y2, vezes`)
+Realizar a ação de `mouse drag` - arrastar o mouse segurando o clique - de uma posição para outra.
 * `param 1:` coordenada X da tela
 * `param 2:` coordenada Y da tela
 * `param 3:` coordenada X da tela
@@ -196,7 +206,7 @@ mouse_move(150, 200)
 ```
 mouse_drag(150, 200, 650, 350) 
 ```
->Clicar com o botão `esquerdo` na posição `x:150, y:200` e arrastar o mouse até a posição `x:650, y:350` na tela.
+> Clicar com o botão `esquerdo` na posição `x:150, y:200` e arrastar o mouse até a posição `x:650, y:350` na tela.
 
 
 ### mouse_drag_imagem(`diretório imagem origem, diretório imagem destino, vezes, tolerância`)
