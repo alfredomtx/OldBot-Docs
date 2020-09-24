@@ -222,7 +222,7 @@ mouse_drag_imagem(diamond_arrow.png, minha_backpack.png, 10)
 > Realizar 10 vezes a ação de buscar pela imagem `diamond_arrow.png` na tela, se encontrada, clicar e mover(arrastar) para a posição da imagem `minha_backpack.png`. Resumidamente, mover a Diamond Arrow para a Backpack.
 
 
-### mouse_drag_imagem_posição(`diretório imagem origem, x, y, vezes, tolerância`)
+### mouse_drag_imagem_posicao(`diretório imagem origem, x, y, vezes, tolerância`)
 * `param 1:` diretório da imagem <sub><sup>  que deve estar **dentro da pasta** do script atual </sup></sub>
 * `param 2:` coordenada X da tela
 * `param 3:` coordenada Y da tela
