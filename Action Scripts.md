@@ -217,7 +217,7 @@ mouse_drag(150, 200, 650, 350)
 * <sub><sup>(opc)</sup></sub> `param 4:` número <sub><sup> nível de tolerância, de 30 a 80, ao buscar pela imagem, quanto menor mais preciso é a busca </sup></sub>
 	* `default:` 45
 ```
-mouse_drag_imagem(`diamond_arrow.png, minha_backpack.png, 10`) 
+mouse_drag_imagem(diamond_arrow.png, minha_backpack.png, 10) 
 ```
 > Realizar 10 vezes a ação de buscar pela imagem `diamond_arrow.png` na tela, se encontrada, clicar e mover(arrastar) para a posição da imagem `minha_backpack.png`. Resumidamente, mover a Diamond Arrow para a Backpack.
 
@@ -231,7 +231,7 @@ mouse_drag_imagem(`diamond_arrow.png, minha_backpack.png, 10`)
 * <sub><sup>(opc)</sup></sub> `param 5:` número <sub><sup> nível de tolerância, de 30 a 80, ao buscar pela imagem, quanto menor mais preciso é a busca </sup></sub>
 	* `default:` 45
 ```
-mouse_drag_imagem(`100_gps.png, $CharPosXCavebot, $CharPosYCavebot, 10`) 
+mouse_drag_imagem(100_gps.png, $CharPosXCavebot, $CharPosYCavebot, 10) 
 ```
 > Realiza 10 vezes a ação de procurar pela imagem `100gps.png` e mover para a coordenada salva nas variáveis de posição do char utilizadas pelo bot.
 
