@@ -124,12 +124,13 @@ Fechar o "executável" do Cavebot, o que irá parar o Cavebot/Targeting e precis
 Útil para fazer validações no script e impossibilitar o uso do script caso alguma validação não esteja correta.
 
 
-### follow_npc(`nome o NPC`)
-Procura pelo NPC na tela(deve estar visível em algum Battle List) e realiza a ação de `follow`.
+### follow_npc(`nome do NPC`)
+Procura pelo NPC na tela, que deve estar **visível em algum Battle List**, e realiza a ação de `Follow`.
 * `param 1:` nome do NPC para seguir, a imagem do nome do NPC deve estar cadastrada na pasta `Data\Images\NPCs\` no diretório do OldBot.
 ```
 follow_npc(captain fearless)
 ```
+> Realizar a ação de `Follow` no NPC `Captain Fearless`, o captão do barco de Venore.
 
  
 ### intervalo_andar_waypoint(`milisegundos`)
