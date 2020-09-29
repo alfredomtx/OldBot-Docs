@@ -130,7 +130,7 @@ Procura pelo NPC na tela, que deve estar **visível em algum Battle List**, e re
 ```
 follow_npc(captain fearless)
 ```
-> Realizar a ação de `Follow` no NPC `Captain Fearless`, o captão do barco de Venore.
+> Realizar a ação de `Follow` no NPC `Captain Fearless`, o capitão do barco de Venore.
 
  
 ### intervalo_andar_waypoint(`milisegundos`)
