@@ -119,10 +119,17 @@ esperar(300)
 > Realizar um "Sleep" de 300ms.
 
 
-
 ### fechar_cavebot()
 Fechar o "executável" do Cavebot, o que irá parar o Cavebot/Targeting e precisará ser reaberto novamente. 
 Útil para fazer validações no script e impossibilitar o uso do script caso alguma validação não esteja correta.
+
+
+### follow_npc(`nome o NPC`)
+Procura pelo NPC na tela(deve estar visível em algum Battle List) e realiza a ação de `follow`.
+* `param 1:` nome do NPC para seguir, a imagem do nome do NPC deve estar cadastrada na pasta `Data\Images\NPCs\` no diretório do OldBot.
+```
+follow_npc(captain fearless)
+```
 
  
 ### intervalo_andar_waypoint(`milisegundos`)
