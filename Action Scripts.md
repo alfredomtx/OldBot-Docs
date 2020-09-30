@@ -83,6 +83,7 @@ clicar_posicao_tela(Right, 1250, 350, 5)
 ### depositar_itens()
 Realiza a ação da Special Action `Procurar depot vazio e depositar itens`, os itens a serem depositados e backpacks devem estar todos configurados préviamente em algum waypoint dessa ação.
 
+
 ### enviar_mensagem(`mensagem`)
 Escrever e enviar uma mensagem no jogo, no chat que estiver ativo no momento.
 * `param 1:` texto
@@ -90,6 +91,7 @@ Escrever e enviar uma mensagem no jogo, no chat que estiver ativo no momento.
 enviar_mensagem(hi)
 ```
 > Escrever e enviar a mensagem `hi` no jogo.
+
 
 ### executar_ahk_script(`nome script, aguardar_execução`)
 Executar um dos `AHK Scripts` que se encontram na pasta `AHK Scripts` no diretório do OldBot.
@@ -139,6 +141,7 @@ follow_npc(captain fearless)
 intervalo_andar_waypoint(3000)
 ```
 > Alterar o tempo de checagem do waypoint(intervalo andar waypoint) para `3000ms`.
+
 
 ### ir_para_waypoint(`waypoint, abortar ações`)
 * `param 1:` número
