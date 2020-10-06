@@ -315,19 +315,44 @@ use_sqm(S)
 > Realizar a ação de "Use" SQM ao `Sul` do char.
 
 
-### variavel_setar_valor(`nome_variável, valor`)
+### variavel_decrementar_valor(`nome variável, quantidade`)
+Decrementar o valor de uma variável.
+* `param 1:` nome da variável **`sem $`**
+* <sub><sup>(opc)</sup></sub> `param 2:` número <sub><sup> quantidade para decrementar o valor da variável</sup></sub>
+	* `default:` 1
+```
+variavel_decrementar_valor(MinhaVariavel) 
+```
+> Decrementar valor da variável `MinhaVariavel` em `1`, ou seja, se a variável possuía o valor `2`, agora passa a ter o valor `1`.
+```
+variavel_decrementar_valor(QuantidadePotionsComprar, 10) 
+```
+> Decrementar valor da variável `QuantidadePotionsComprar` em `10`, ou seja, se a variável possuía o valor `200`, agora passa a ter o valor `190`.
+
+
+### variavel_incrementar_valor(`nome variável, quantidade`)
+Incrementar o valor de uma variável.
+* `param 1:` nome da variável **`sem $`**
+* <sub><sup>(opc)</sup></sub> `param 2:` número <sub><sup> quantidade para incrementar o valor da variável</sup></sub>
+	* `default:` 1
+```
+valor_incrementar_valor(MinhaVariavel) 
+```
+> Incrementar valor da variável `MinhaVariavel` em `1`, ou seja, se a variável possuía o valor `2`, agora passa a ter o valor `3`.
+
+
+### variavel_setar_valor(`nome variável, valor`)
 Seta o valor desejado na variável escolhida, é muito útil para alterar configurações(variáveis) padrões do bot no decorrer do script.
-* `param 1:` nome da variável
-	*  [ ] pendente criação de documentação das variáveis
-* `param 2:` valor da variável **`sem $`**
+* `param 1:` nome da variável **`sem $`**
+* `param 2:` valor da variável 
 ```
 variavel_setar_valor(AntiKS, 1) 
 ```
 > Muda o valor da variável `AntiKS` para `1`, ativando a função de AntiKS do bot.
 ```
-variavel_setar_valor(quantidade_potions_comprar, 250) 
+variavel_setar_valor(QuantidadePotionsComprar, 250) 
 ```
-> Muda o valor da variável(do script) `quantidade_potions_comprar` para `250`.
+> Muda o valor da variável(do script) `QuantidadePotionsComprar` para `250`.
 
 
 ### virar_char_direcao(`direção`)
