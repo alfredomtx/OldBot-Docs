@@ -24,15 +24,15 @@ Realiza a função de detectar a posição central do char na tela e atualiza os
 
 
 ### checar_lixos_dropar()
-Realiza a mesma ação da Special Action "Checar lixos para dropar".
+Buscar pelos itens cadastrados para serem dropados na aba do Looting. Realiza a mesma ação da Special Action "Checar lixos para dropar".
 
 
 ### check_disconnected_desabilitar()
-Realiza a mesma ação da Special Action `Desabilitar check disconnected nas waypoints`.
+Desabilitar a checagem de desconexão nos waypoints, para que o Cavebot rode waypoints mesmo com o char deslogado. Realiza a mesma ação da Special Action `Desabilitar check disconnected nas waypoints`.
 
 
 ### check_disconnected_habilitar()
-Realiza a mesma ação da Special Action `Habilitar check disconnected nas waypoints`.
+Habilitar a checagem de desconexão nos waypoints. Realiza a mesma ação da Special Action `Habilitar check disconnected nas waypoints`.
 
 
 ### clicar_sqm(`clique, direção, vezes, delay cliques`)
@@ -61,11 +61,11 @@ Procurar por uma imagem na tela e, se encontrada, clicar nela(no centro da image
 ``` 
 clicar_na_imagem(Left, 1, 1000, WP1.png) 
 ```
->Exemplo 1: Clicar com o botão `esquerdo` 1 vez na imagem `WP1.png` que está na pasta do script.
+>Exemplo 1: Clicar com o botão `esquerdo` `1` vez na imagem `WP1.png` que está na pasta do Script.
 ``` 
 clicar_na_imagem(Right, 3, 1000, imagens_script\meuitem.png) 
 ```
-> Exemplo 2: Clicar com o botão `direito` `1` vez na imagem **`meuitem.png`** que está dentro da pasta **`imagens_script`** dentro da **pasta do script**.
+> Exemplo 2: Clicar com o botão `direito` `1` vez na imagem **`meuitem.png`** que está dentro da pasta **`imagens_script`** dentro da **pasta do Script**.
 
 
 ### clicar_posicao_tela(`clique, x, y, vezes, delay cliques`)
@@ -81,7 +81,7 @@ clicar_posicao_tela(Right, 1250, 350, 5)
 > Clicar com o botão `direito` `5` vezes na posição `x:1250`, `y:350` da tela.
 
 ### depositar_itens()
-Realiza a ação da Special Action `Procurar depot vazio e depositar itens`, os itens a serem depositados e backpacks devem estar todos configurados préviamente em algum waypoint dessa ação.
+Realiza a ação da Special Action `Procurar depot vazio e depositar itens`, os itens a serem depositados devem estar todos configurados préviamente em algum waypoint dessa ação.
 
 
 ### enviar_mensagem(`mensagem`)
@@ -118,7 +118,7 @@ Realizar um sleep/delay antes de realizar uma nova ação.
 ```
 esperar(300)
 ```
-> Realizar um "Sleep" de 300ms.
+> Realizar um `Sleep` de 300ms.
 
 
 ### fechar_cavebot()
