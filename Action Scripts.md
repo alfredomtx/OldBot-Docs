@@ -196,6 +196,19 @@ message_box(você está usando o OldBot)
 > Mostrar uma MessageBox na tela com a mensagem `"você está usando o OldBot"`.
 
 
+### run_command(`comando`)
+Executa a função `[Run](https://www.autohotkey.com/docs/commands/Run.htm)` do AutoHotkey, que é muito versátil, podendo ser utilizada para rodar comandos no `Cmd` do Windows, URLs, etc. Não é possível abrir arquivos e diretórios utilizando este comando na Action Script.
+* `param 1:` texto
+```
+run_command(Shutdown /t 0)
+```
+> Executa o comando `Shutdown /t 0` no `Cmd` do Windows, esse comando faz com que o computador seja desligado imediatamente, útil para por exemplo desligar o seu PC em um certo horário.
+```
+run_command(http://oldbot.com.br)
+```
+> Abre o site do OldBot no navegador.
+
+
 ### mouse_move(`x, y`)
 Mover o mouse para uma posição específica da tela.
 * `param 1:` coordenada X da tela
