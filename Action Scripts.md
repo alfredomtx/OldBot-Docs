@@ -197,7 +197,7 @@ message_box(você está usando o OldBot)
 
 
 ### run_command(`comando`)
-Executa a função [Run](https://www.autohotkey.com/docs/commands/Run.htm) do AutoHotkey, que é muito versátil, podendo ser utilizada para rodar comandos no `Cmd` do Windows, URLs, etc. Não é possível abrir arquivos e diretórios utilizando este comando na Action Script.
+Executa a [função Run do AutoHotkey](https://www.autohotkey.com/docs/commands/Run.htm), que é muito versátil, podendo ser utilizada para rodar comandos no `Cmd` do Windows, URLs, etc. Não é possível abrir arquivos e diretórios utilizando este comando na Action Script.
 * `param 1:` texto
 ```
 run_command(Shutdown /t 0)
