@@ -200,9 +200,9 @@ message_box(você está usando o OldBot)
 Executa a [função Run do AutoHotkey](https://www.autohotkey.com/docs/commands/Run.htm), que é muito versátil, podendo ser utilizada para rodar comandos no `Cmd` do Windows, abrir URLs, etc. Não é possível abrir arquivos e diretórios utilizando este comando na Action Script.
 * `param 1:` texto
 ```
-run_command(Shutdown /t 0)
+run_command(Shutdown /s)
 ```
-> Executa o comando `Shutdown /t 0` no `Cmd` do Windows, esse comando faz com que o computador seja desligado imediatamente, útil para por exemplo desligar o seu PC em um certo horário.
+> Executa o comando `Shutdown /s` no `Cmd` do Windows, esse comando faz com que o computador seja desligado, útil para por exemplo desligar o seu PC em um certo horário.
 ```
 run_command(http://oldbot.com.br)
 ```
