@@ -187,6 +187,19 @@ luring_mode_iniciar(3)
 > Parar o Luring Mode e voltar a atacar normalmente.
 
 
+### log(`mensagem`)
+Escrever e exibir informações no log do Cavebot, útil para "debugar" o script, printar o valor de variáveis, etc.
+* `param 1:` texto
+```
+log(log teste!)
+```
+> Escreve e exibe a mensagem `"log teste!"` no log do Cavebot.
+```
+log($MinhaVariavel)
+```
+> Escreve e exibe o `valor` da variável `MinhaVariavel` no log do Cavebot.
+
+
 ### message_box(`mensagem`)
 Mostrar uma `MessageBox` na tela, nenhuma próxima ação do Cavebot/Targeting será executada até que a janela da mensagem seja confirmada/fechada. Realiza a mesma ação da Special Action `Mostrar MessageBox na tela`.
 * `param 1:` texto
