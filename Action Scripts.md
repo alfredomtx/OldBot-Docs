@@ -279,6 +279,9 @@ monstro_remover_lista_atacar(adventurer)
 > Remover o monstro `adventurer` da lista dos monstros para serem atacados pelo Targeting(da lista do script).
 
 
+### procurar_corpos()
+Executar a função de procurar o corpo do monstro para usar item, procurando de todos os monstros que possuam imagem de seu corpo cadastrado no Targeting.
+
 ### pressionar_tecla(`tecla, vezes,  delay`)
 * `param 1:` tecla - <a href="https://www.autohotkey.com/docs/commands/Send.htm#keynames" target="_blank">lista de teclas</a>
 * `param 2:` número 
