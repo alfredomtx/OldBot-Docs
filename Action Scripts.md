@@ -476,7 +476,7 @@ message_box(Não está no térreo) [se o floor for (0, diferente)]
 
 ## `PARÂMETRO "abortar ações*"`
 Opcional em todas as condições, pode ser  **`0` ou `1`**.
-Se marcado como 1, irá abortar todas as próximas ações do Action Script se a **condição der como verdadeira**, o padrão é `0`.
+Se marcado como 1, irá abortar todas as próximas ações do Action Script se a **condição for falsa**, o padrão é `0`(continuar executando as próximas linhas do script).
 
 ---
 
